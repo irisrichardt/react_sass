@@ -1,0 +1,32 @@
+@use '../variables'
+
+.navbar
+  background-color: variables.$color-blue
+  padding: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 2.4rem
+  box-shadow: 1px 2px 5px variables.$bg-color-secondary
+
+  .center
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .logo
+    color: variables.$text-color
+    font-size: 1.5rem
+
+  .nav-list
+    list-style: none
+    display: flex
+    margin-top: 10px
+
+    li
+      margin-right: 10px
+      color: variables.$text-color
+      cursor: pointer
+
+      &:hover
+        text-decoration: underline
